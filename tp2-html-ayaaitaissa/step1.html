@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Histoire du Web — Brève Chronologie et perspectives</title>
+  <style>
+    /* Mise en forme simple (optionnelle) */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+      background:#f7f9fb;
+      color: #111;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 16px;
+    }
+
+    header, nav, main, footer, section {
+      padding: 12px;
+      background: white;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      display: inline-block;
+      background: #eef4fb;
+      color: #0b5;
+    }
+
+    /* zones thématiques */
+    .thematic {
+      padding: 18px;
+    }
+
+    .separator {
+      height: 8px; /* séparateur visuel entre thématiques */
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* petit style responsive */
+    @media (max-width:600px){
+      nav ul { flex-direction: column; align-items: stretch; }
+      .container { margin: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Entête -->
+    <header role="banner">
+      <h1>Histoire du Web — Brève Chronologie et perspectives</h1>
+    </header>
+
+    <!-- Menu / Navigation (id1) -->
+    <nav id="id1" aria-label="Menu principal">
+      <ul>
+        <li><a href="#id2">Thématique 1</a></li>
+        <li><a href="#id3">Thématique 2</a></li>
+        <li><a href="#id4">Thématique 3</a></li>
+        <li><a href="#id5">Thématique 4</a></li>
+      </ul>
+    </nav>
+
+    <!-- Corps principal -->
+    <main role="main">
+      <!-- Thématique 1 (id2) -->
+      <section id="id2" class="thematic" aria-labelledby="th1-title">
+        <h2 id="th1-title">Thématique 1</h2>
+        <p>Precursors.</p>
+      </section>
+
+      <div class="separator" aria-hidden="true"></div>
+
+      <!-- Thématique 2 (id3) -->
+      <section id="id3" class="thematic" aria-labelledby="th2-title">
+        <h2 id="th2-title">Thématique 2</h2>
+        <p>creation.</p>
+      </section>
+
+      <div class="separator" aria-hidden="true"></div>
+
+      <!-- Thématique 3 (id4) -->
+      <section id="id4" class="thematic" aria-labelledby="th3-title">
+        <h2 id="th3-title">Thématique 3</h2>
+        <p>semantic.</p>
+      </section>
+
+      <div class="separator" aria-hidden="true"></div>
+
+      <!-- Thématique 4 (id5) -->
+      <section id="id5" class="thematic" aria-labelledby="th4-title">
+        <h2 id="th4-title">Thématique 4</h2>
+        <p>resume.</p>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer role="contentinfo">
+      <p>&copy; 2025 — TP Programmation Web</p>
+    </footer>
+  </div>
+</body>
+</html>
